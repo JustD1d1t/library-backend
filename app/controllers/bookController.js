@@ -32,6 +32,7 @@ class BookControllerClass {
   }
   async addBook(req, res) {
     const { title, author, description } = req.body;
+    console.log(req.body);
     const book = new Book({
       title,
       author,
